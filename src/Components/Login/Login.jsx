@@ -15,7 +15,7 @@ const Login = () => {
     <div className='loginPage flex'>
       <div className="container flex">
 
-        {/* <div className="videoDiv">
+        <div className="videoDiv">
           <video src={video} autoPlay muted loop></video>
 
 
@@ -30,7 +30,9 @@ const Login = () => {
               <button className="btn">Sign Up  </button>
             </Link>
           </div>
-        </div> */}
+        </div>
+
+        <div className="container2">
 
         <div className="formDiv flex">
           <div className="headerDiv">
@@ -38,6 +40,7 @@ const Login = () => {
             <h3> Welcome Back!</h3>
           </div>
         </div>
+
 
         <form action="" className='form grid'>
           <span>Login Status will go here</span>
@@ -67,6 +70,9 @@ const Login = () => {
              Forgot your password? <a href="">Click Here</a>
           </span>
         </form>
+        </div>
+
+        
       </div>
     </div>
   )
