@@ -20,14 +20,14 @@ const Login = () => {
 
 
           <div className="textDiv">
-            <h2 className="title">Create and Sell Extraordinary Products</h2>
-            <p>Adopt the peace of nature!</p>
+            <h2 className="title">UNIVERSIDAD CENTRAL DEL ECUADOR</h2>
+            <p>Introducción a la AI</p>
           </div>
 
           <div className="footerDiv flex">
-            <span className="text">Don't have an account?</span>
+            <span className="text">Olvidaste tu cuenta?</span>
             <Link to={'/register'}>
-              <button className="btn">Sign Up  </button>
+              <button className="btn">Login  </button>´
             </Link>
           </div>
         </div>
@@ -37,37 +37,39 @@ const Login = () => {
         <div className="formDiv flex">
           <div className="headerDiv">
             <img src={logo} alt="" />
-            <h3> Welcome Back!</h3>
+            <h3> Bienvenido!</h3>
           </div>
         </div>
 
 
         <form action="" className='form grid'>
-          <span>Login Status will go here</span>
+          <span>Ingrese con sus datos</span>
           
           <div className="inputDiv">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Usuario</label>
             <div className="input flex">
               <FaUserShield className='icon'/>
-              <input type="text" id='username' placeholder='Enter Username' />
+              <input type="text" id='username' placeholder='Ingrese su usuario' />
             </div>
           </div>
 
           <div className="inputDiv">
-            <label htmlFor="password">password</label>
+            <label htmlFor="password">Contraseña</label>
             <div className="input flex">
               <BsFillShieldLockFill className='icon'/>
-              <input type="password" id='password' placeholder='Enter password' />
+              <input type="password" id='password' placeholder='Ingresa su contraseña' />
             </div>
           </div>
 
           <button type='submit' className='btn flex'>
-            <span>Login</span>
+            <span className='showMessage'>Login</span>
             <AiOutlineSwapRight className='icon'/>
           </button>
 
+           <a href="/dashboard">Dashboard</a>
+
           <span className="forgotPassword">
-             Forgot your password? <a href="">Click Here</a>
+             Olvido su contraseña? <a href="">Click Here</a>
           </span>
         </form>
         </div>
